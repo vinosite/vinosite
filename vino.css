@@ -167,7 +167,7 @@ header {
 }
 
 header .razao img {
-    width: 100%;
+    width: 110%;
     height: 98%;
     margin-top: 0.6%;
     margin-left: 7%;
@@ -175,13 +175,14 @@ header .razao img {
 
 header nav {
     width: 70%;
+    margin-left: 6%;
     margin-top: 1%;
 }
 
 header nav ul {
     list-style: none;
     text-align: center;
-    padding-top: 2%;
+    padding-top: 1.5%;
 }
 
 header nav ul li {
