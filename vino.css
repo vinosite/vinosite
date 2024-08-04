@@ -485,7 +485,16 @@ footer {
 
 @media (max-width: 640px) and (min-width: 50px) {
 
-    
+    .conteúdoprincipal button {
+        padding: 10px 20px;
+        margin: 0 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #4caf50;
+        color: white;
+        font-size: 2vw;
+        cursor: pointer;
+    }
 .carousel {
     position: relative;
     width: 100%;
@@ -813,7 +822,17 @@ footer {
 
 }
 @media (max-width:1280px) and (min-width: 640px){
-     
+    .conteúdoprincipal button {
+        padding: 10px 20px;
+        margin: 0 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #4caf50;
+        color: white;
+        font-size: 2vw;
+        cursor: pointer;
+    }
+    
 .carousel {
     position: relative;
     width: 100%;

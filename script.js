@@ -89,17 +89,18 @@ function addToCart(id) {
     } else {
         alert('Por favor, selecione uma quantidade maior que zero.');
     }
-}
-document.addEventListener('DOMContentLoaded', function() {
+}document.addEventListener('DOMContentLoaded', function() {
   var menuHamburguer = document.getElementById('menu-hamburguer');
   var menuDropdown = document.getElementById('menu-dropdown');
   var submenuToggles = document.querySelectorAll('.submenu-toggle');
-  var menuOptions = document.querySelectorAll('#menu-dropdown a');
+  var menuOptions = document.querySelectorAll('#menu-dropdown a:not(.submenu-toggle)');
 
+  // Alterna a visibilidade do menu
   menuHamburguer.addEventListener('click', function() {
       menuDropdown.classList.toggle('active');
   });
 
+  // Alterna a visibilidade dos submenus
   submenuToggles.forEach(function(toggle) {
       toggle.addEventListener('click', function(event) {
           event.preventDefault();
@@ -108,6 +109,7 @@ document.addEventListener('DOMContentLoaded', function() {
       });
   });
 
+  // Fecha o menu e todos os submenus ao clicar em uma opção
   menuOptions.forEach(function(option) {
       option.addEventListener('click', function() {
           menuDropdown.classList.remove('active');
@@ -118,6 +120,7 @@ document.addEventListener('DOMContentLoaded', function() {
       });
   });
 
+  // Fecha o menu e todos os submenus ao clicar fora do menu
   window.addEventListener('click', function(event) {
       if (!event.target.matches('#menu-hamburguer') && !event.target.closest('#menu-dropdown')) {
           menuDropdown.classList.remove('active');
@@ -128,5 +131,3 @@ document.addEventListener('DOMContentLoaded', function() {
       }
   });
 });
-
-  
