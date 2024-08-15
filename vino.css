@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-:target {
+html {
     scroll-margin-top: 160px;
 }
 
@@ -484,7 +484,7 @@ footer {
     border: 0;
 }
 
-@media only screen and (max-width: 640px) {
+@media screen and (max-width:640px) {
 /* celular */ 
 
     .conteúdoprincipal button {
@@ -527,9 +527,12 @@ footer {
         visibility: visible;
 
     }
+    div .logo{
+        margin-left: 55%;
+    }
 
     .logo {
-        margin-left: 60%;
+        margin-left: 70%;
         position: absolute;
         width: 14vh;
     }
@@ -558,7 +561,7 @@ footer {
     .menu-dropdown {
         list-style-type: none;
         margin: 10%;
-        margin-top: 80%;
+        
         padding: 10%;
         display: none;
         flex-direction: column;
@@ -823,7 +826,7 @@ footer {
     }
 
 }
-@media only screen and (max-width:1280px) {
+@media  screen and (min-width:641px) and (max-width:900px) {
     /*tablet e mini-tablet */
     .conteúdoprincipal button {
         padding: 10px 20px;
